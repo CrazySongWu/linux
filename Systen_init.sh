@@ -5,6 +5,8 @@
 # 系统基础优化脚本
 ######################
 
+# 优化PS
+echo 'PS1="\[\e[37;40m\][\[\e[36;40m\]\u\[\e[37;40m\]@\h \[\e[36;40m\]\w\[\e[0m\]]\\$ "' > /etc/profile.d/PS1.sh
 
 # 配置yum源
 mkdir /etc/yum.repos.d/bak
@@ -23,10 +25,6 @@ yum -y install wget vim lrzsz bash-completion net-tools lsof psmisc tree unzip n
 # yum -y update yum\* rpm\* python\*
 # yum clean all
 # yum -y update
-
-
-
-
 
 # 更改Linux系统时区
 #rm -rf /etc/localtime
