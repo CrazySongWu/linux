@@ -36,6 +36,8 @@ cat >> /etc/security/limits.conf << EOF
 * hard nofile 65535
 * soft nproc 65535
 * hard nproc 65535
+* soft memlock unlimited
+* hard memlock unlimited
 EOF
 
 # systemd 启动的程序，需要修改
